@@ -43,10 +43,7 @@ fun SearchBar() {
     var text by remember { mutableStateOf("") }
     TextField(
         value = text,
-        onValueChange = {
-            text = it
-
-        },
+        onValueChange = { text = it },
         maxLines = 1,
         modifier = Modifier
             .fillMaxWidth()
